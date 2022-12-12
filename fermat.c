@@ -123,7 +123,6 @@ int main() {
     unsigned long N = get_input();
     factor(N);
     factor_sieve(N);
-    factor_sievex(N);
   }
   return 0;
 }
