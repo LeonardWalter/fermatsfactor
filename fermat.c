@@ -131,11 +131,13 @@ int main() {
 /**
  * Complexity of the algorithm:
  * 
- * Fermats factorization will at most take N/2 - sqrt(N) steps if our number
+ * Ideally, Fermats factorization will at most take N/2 - sqrt(N) steps if our number
  * N is a prime. So complexity is O(N)
- * 
- * The sieve can get rid of some unneccessary computations, decresing 
+ * The sieve can get rid of some more unneccessary computations, decresing 
  * complexity closer to the range of N/8 - sqrt(N), but for big O notation
  * complexity is still O(N)
- * 
+ *
+ * In reality, we have to consider this algorithm as pseudo polynomial. Since simple 
+ * computations become more complex with a growing input number N. I.e. it is more
+ * complex to add two 10 digit numbers than adding two 5 digit numbers.
 */
